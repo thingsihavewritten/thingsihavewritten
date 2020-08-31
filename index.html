@@ -1,0 +1,311 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset=utf-8 />    
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+
+    
+<style>
+* {
+  box-sizing: border-box;
+}
+    
+#font1 {
+  font-size: 9vw;
+  font-style: oblique;
+  color: red;
+  text-shadow: black 1px 1px;
+  /*background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  
+    }
+ /*   
+.linkfont {
+    color: red;
+    /*background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+   /* text-decoration: none;
+    text-shadow: violet 1px 1px;
+        
+    }*/
+    
+    
+
+.menu {
+  float:left;
+  width:100%;
+  text-align:center;
+}
+.menu a {
+  background: red; /* For browsers that do not support gradients */
+  /*background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+  border: 2px solid white;
+  border-radius: 8px;
+  padding:8px;
+  margin-top:7px;
+  margin-bottom: 7px;
+  display:block;
+  width:100%;
+  color: white;
+  text-decoration: none;
+  text-shadow: black 1px 1px; 
+  font-style: oblique;
+}
+
+.menu2 {
+  float:left;
+  width:100%;
+  text-align:center;
+}
+    
+
+    */
+    
+.menu2 a {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    
+    border-radius: 8px;
+}    
+    
+    
+    
+    
+    
+    
+    
+    
+.title {
+  float:left;
+  width:20%;
+  text-align:left;
+  /*background-color:black;
+  border: 0px solid black;*/
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top:7px;
+  margin-bottom:7px;
+  display:block;
+  width:100%;
+  color: red;
+  text-decoration: none;
+  text-shadow: black 1px 1px;
+  font-size: 50px;
+  font-style: oblique;
+}
+    
+.text {
+  float:left;
+  width:100%;
+  text-align:left;
+  background-color:transparent;
+  border: 0px solid black;
+  padding:8px;
+  margin-top:7px;
+  margin-bottom:7px;
+  display:block;
+  width:100%;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+    
+
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  margin-right:3px;
+  text-align:center;
+}
+   
+.embed {
+    background:none;
+    float: left;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 25px;
+    padding-bottom: 50px;
+        
+    }
+
+.textbox {
+    width: 100%;
+    background: none;
+    color: black;
+    float: left;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    
+    }
+    
+.textbox2 {
+    width: 100%;
+    background: none;
+ ;;   color: black;
+    float: left;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    
+    }
+    
+.author {
+    float: left;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom: 25px;
+    
+    }
+    
+    .gifcontainer {
+    float: left;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    /*padding-left: 10%;
+    padding-right: 10%*/
+    padding-top: 50px;
+    background: white;
+    height: 90%;
+    }
+
+    
+
+
+
+
+
+
+
+    
+
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+
+
+</style>
+</head>
+
+    
+<body style="font-family:sans-serif;color:black;">
+    
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="Y8efvj4y"></script>    
+
+<div style="background-color: transparent;
+            padding:15px;text-align:left;">
+  
+    
+<div id="font1">
+<b>Things I Have Written</b>
+</div>
+</div>
+
+<div style="overflow:auto">
+
+ <div class="menu">
+     <a href="https://thingsihaveseen.github.io/connect"><b>Connect</b></a>
+     <a href="https://thingsihaveseen.github.io/archive.html"><b>More Posts</b></a>      
+ </div>
+    
+ 
+    
+
+
+<div class="title">    
+<b>Against Optimism</b> 
+    </div>
+<div class="author">   
+<i>8.17.2020 -Michael Stepniak</i> 
+</div> 
+   
+<div class="embed">
+ <div class="fb-post" data-href="https://www.facebook.com/AbdulforMichigan/posts/897917270699317" data-show-text="true" data-width=""><blockquote cite="https://www.facebook.com/AbdulforMichigan/posts/897917270699317" class="fb-xfbml-parse-ignore"><p>Fascism is a word so often misused, that it immediately elicits eye rolls from serious people. But it does have a...</p>Posted by <a href="https://www.facebook.com/AbdulforMichigan/">Abdul El-Sayed</a> on&nbsp;<a href="https://www.facebook.com/AbdulforMichigan/posts/897917270699317">Tuesday, July 21, 2020</a></blockquote></div>   
+</div>    
+    
+    
+    
+    
+    
+    
+    
+<div class="textbox"> 
+<p>
+Abdul El-Sayed is right. But there is something here that requires investigation. </p>
+<p>
+In his discussion of people’s willingness to swallow the excuses of our leaders, or to turn a blind eye to problems that face us as a society, Abdul writes: “by nature, people are optimists.” This is a statement worth exploring, and possibly finding disagreement with. </p>
+<p>
+Are we “natural” optimists? Or are we optimists by necessity? We are subjected, from birth, to an immersive capitalist propaganda campaign. We are then forced, from puberty, to take part in a system that, for many of us, has either completely collapsed, or is constantly teetering on the edge of collapse. All the while it is promised that if we work hard and play by the rules, we will achieve our dreams. </p>
+<p>
+It seems likely then, that optimism is a required logical and emotional maneuver that we are indoctrinated into, that allows our minds to fit the square peg of capitalism into the round hole of human reality. </p>
+<p>
+George Orwell writes, in 1984, that “Freedom is the freedom to say that two plus two makes four. If that is granted, all else follows.” Beliefs held by many people, including religion, as well as personal values such as honesty, empathy, freedom, and kindness, are in direct conflict with capitalism. </p>
+<p>
+In order to believe in and defend an inherently violent and exploitative system such as capitalism, it takes optimism to simultaneously think of oneself as good, generous, decent, loving, and honest – positive attributes that many people identify with as part of their self image, or the person they believe themselves to be on the inside.</p>
+<p>
+Most people have no “belief” in capitalism. Rather, capitalism is the water they swim in. It is the oxygen in their lungs. It is the environment in which they developed, and they cannot conceive of any other way of being. They lack a framework to analyze their way of thought because they are unaware that they have “a way” of thought. It might as well be asked of a fish to live on dry land.</p>
+<p>
+Let’s continue with aquatic metaphors. A common tadpole lives in a small pond. It breathes through gills, fully water-bound. Over the weeks, its cartilaginous skeleton develops into a spinal column, and it grows lungs, arms, and legs, and emerges onto dry land, ready for a larger world. Humans have, throughout our history, lived within many economic systems. For those who cannot fathom life in a non-capitalist system, it is as if they are a fully-grown frog who refuses to leave the pond, denying the existence of its spine, lungs, arms, legs, and ultimately insisting that land is impossible. This, of course, is the nature of indoctrination.</p>
+</div>
+    <div class="gifcontainer"><a href="https://imgur.com/DRJVxtV"><img src="https://i.imgur.com/DRJVxtV.gif" title="source: imgur.com" style="width: 100%" /></a></div> 
+<div class="textbox2">
+<p>
+It is here, on the line that separates objective reality from indoctrinated reality, that El-Sayed’s thoughts on optimism “by nature” will be considered in this writing. For many people, existence within the capitalist framework is the only possible existence. It is what they’ve been told by every authority, community, and trusted loved one, for their entire lives. It’s Orwell’s O’Brien and Winston writ large: Capitalism, like O’Brien, holds out four fingers while demanding that the public, like Winston, see five – or be destroyed.</p>
+<p>
+This is at the root of older adults telling young people “you will become more conservative as you get older.” It is true that aging into conservatism is sometimes a function of increased economic privilege, and the conservative desire to maintain the status quo in order to protect one’s station in society. But what about the billions of people whose lives never improve, who remain working and poor until they die? The years of exploitation and abuse that many people refer to as “having life experience” translate directly to cynicism, prejudice, and an evil alignment with their oppressors. Winston, as O’Brien strips away his humanity, layer by layer, manages to truly see the fifth finger that doesn’t exist. He believes in it. As with Winston, seeing things that aren’t there becomes “natural.”</p>
+<p>
+Upon the destruction of youthful tendencies to creativity and intellectual curiosity, a once vibrant individual is now left with “optimism” as a bitter consolation prize, as they now identify with the very system that has robbed and exploited them. Yet, this person may identify with a religious faith grounded in charity, forgiveness and salvation. The teachings of Jesus Christ in particular are a direct, hard rebuke to capitalism. They may think of themselves as humanitarian, or “good,’ or “moral,” and they may value “freedom.” Any belief in one’s own goodness, morality, or freedom, while simultaneously defending capitalism is truly an act of extreme optimism.</p>
+<p>
+This writing isn’t in disagreement with Abdul El-Sayed, but rather to make two specific points. The first point is that optimism is a hollow thing. It isn’t a pretty emotion. Optimism is a sorry replacement for the most worthwhile, essential parts of our humanity – the very things that capitalism destroys. As Joe Strummer sang, “It’s the best years of your life they want to steal.” Optimism is often a synonym for denial, as it is in El-Sayed’s post, which describes the greater American public, watching Donald Trump as he elevates white supremacists, sends federal troops to kidnap civilians off our city streets, and all the while denying the rise of fascism in the United States. We must never be optimistic, ever. We must fight against the optimism of capitalism with fearlessness, vibrancy, beauty, creativity, and love.</p>
+<p>
+The second point is that while the hollow optimism of capitalism may seem natural, it is not. The condition of relentless public positivity that we are pressured into is anything but natural. We are not born saying or feeling anything optimistic. If the world wasn’t on fire, we would not feel the need to “hope for the best.” Our optimism is an indoctrinated behavior. It is there to keep us “thinking positive,” when we should be full of rage at what has been stolen from us, collectively, as a world. We are sold lies as children, and our stunted emotional lives continue into our adulthood, as we are told that staying positive is “good,” and anger is “bad.” We continue with a child’s understanding of ourselves, our humanity, and the economic system that we live within and under, and that is something that must end.</p>
+<p>
+In conclusion, it is obvious that Abdul El-Sayed did not choose the word “optimists” in order to provoke, and it doesn’t seem likely that he meant it in the way that I describe it here. But the moment I read it, I was provoked. My thoughts and my anger came to the surface and the words started flowing. So, in lieu of a reiteration or summary of my points and a reworded thesis question or statement, I’ll simply say thank you, to Abdul El-Sayed, who through his choice of words inspired me to write my thoughts out, and investigate the nature of optimism within the capitalist system.</p>
+
+</div>
+ 
+</div>
+
+
+    
+<script>
+    
+ 
+</script>
+</body>
+</html>
