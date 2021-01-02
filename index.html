@@ -102,13 +102,8 @@ a:active {
  
     Original size for .title - 50px
     
-*/
-    
-    
-    
-    
-.title {
-  float:left;
+*/div.title {
+ float:left;
   width:20%;
   text-align:left;
   /*background-color:black;
@@ -124,10 +119,91 @@ a:active {
   color: red;
   text-decoration: none;
   text-shadow: black 1px 1px;
+  font-style: oblique;
+}
+
+@media screen and (min-width: 601px) {
+  div.title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.title {
+    font-size: 30px;
+  }
+}
+    
+div.subheading {
+ float:left;
+  width:20%;
+  text-align:left;
+  /*background-color:black;
+  border: 0px solid black;*/
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top:7px;
+  margin-bottom:7px;
+  display:block;
+  width:100%;
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+@media screen and (min-width: 601px) {
+  div.subheading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.subheading {
+    font-size: 20px;
+  }
+}
+    
+
+    
+    
+    
+/*    
+.title {
+  float:left;
+  width:20%;
+  text-align:left;
+  /*background-color:black;
+  border: 0px solid black;*//*
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top:7px;
+  margin-bottom:7px;
+  display:block;
+  width:100%;
+  color: red;
+  text-decoration: none;
+  text-shadow: black 1px 1px;
   font-size: 4vw;
   font-style: oblique;
 }
     
+.subheading {
+    float:left;
+    text-align:left;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display:block;
+    width:100%;
+    color: red;
+    text-decoration: none;
+    text-shadow: black 1px 1px;
+    font-size: 2vw;
+    font-style: oblique;
+    }
+ */   
 .text {
   float:left;
   width:100%;
@@ -240,20 +316,8 @@ a:active {
     height: auto;
     }
     
-    .subheading {
-    float:left;
-    text-align:left;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    display:block;
-    width:100%;
-    color: red;
-    text-decoration: none;
-    text-shadow: black 1px 1px;
-    font-size: 2vw;
-    font-style: oblique;
-    }
-	
+    
+    
     #jimmy {
         width: 100%;
         height: auto;
@@ -267,14 +331,7 @@ a:active {
     }
     
     
-
-
-
-
-
-
     
-
 
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
@@ -327,7 +384,7 @@ a:active {
     
     
 <div class="textbox"> 
- 
+    
 <div id="container2">
     
 <a href="https://imgur.com/ZhKQEb4"><img id="jimmy" img src="https://i.imgur.com/ZhKQEb4.png?1" title="source: imgur.com" class="responsive"/></a>   
