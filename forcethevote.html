@@ -1,0 +1,527 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset=utf-8 />    
+
+
+    
+    
+    
+<style>
+    
+* {
+  box-sizing: border-box;
+}
+    
+#font1 {
+  font-size: 9vw;
+  font-style: oblique;
+  color: red;
+  text-shadow: black 1px 1px;
+  /*background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  
+    }
+    
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: #ff7465;
+}
+
+/* mouse over link */
+a:hover {
+  color: grey;
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+    
+    
+
+.menu {
+  float:left;
+  width:100%;
+  text-align:center;
+}
+.menu a {
+  background: red; /* For browsers that do not support gradients */
+  /*background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+  border: 2px solid white;
+  border-radius: 8px;
+  padding:8px;
+  margin-top:7px;
+  margin-bottom: 7px;
+  display:block;
+  width:100%;
+  color: white;
+  text-decoration: none;
+  text-shadow: black 1px 1px; 
+  font-style: oblique;
+}
+
+.menu2 {
+  float:left;
+  width:100%;
+  text-align:center;
+}
+    
+
+
+    
+.menu2 a {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}    
+    
+    
+    
+  /*
+  <h1 style="font-size:8vw;">Hello World</h1>
+<p style="font-size:2vw;">Resize the browser window to see how the font size scales.</p>    
+ 
+    Original size for .title - 50px
+    
+*/div.title {
+ float:left;
+  width:20%;
+  text-align:left;
+  /*background-color:black;
+  border: 0px solid black;*/
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top:7px;
+  margin-bottom:7px;
+  display:block;
+  width:100%;
+  color: red;
+  text-decoration: none;
+  text-shadow: black 1px 1px;
+  font-style: oblique;
+}
+
+@media screen and (min-width: 601px) {
+  div.title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.title {
+    font-size: 30px;
+  }
+}
+    
+div.subheading {
+ float:left;
+  width:20%;
+  text-align:left;
+  /*background-color:black;
+  border: 0px solid black;*/
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top:7px;
+  margin-bottom:7px;
+  display:block;
+  width:100%;
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+@media screen and (min-width: 601px) {
+  div.subheading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.subheading {
+    font-size: 20px;
+  }
+}
+    
+
+    
+    
+    
+/*    
+.title {
+  float:left;
+  width:20%;
+  text-align:left;
+  /*background-color:black;
+  border: 0px solid black;*//*
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top:7px;
+  margin-bottom:7px;
+  display:block;
+  width:100%;
+  color: red;
+  text-decoration: none;
+  text-shadow: black 1px 1px;
+  font-size: 4vw;
+  font-style: oblique;
+}
+    
+.subheading {
+    float:left;
+    text-align:left;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display:block;
+    width:100%;
+    color: red;
+    text-decoration: none;
+    text-shadow: black 1px 1px;
+    font-size: 2vw;
+    font-style: oblique;
+    }
+ */   
+.text {
+  float:left;
+  width:100%;
+  text-align:left;
+  background-color:transparent;
+  border: 0px solid black;
+  padding:8px;
+  margin-top:7px;
+  margin-bottom:7px;
+  display:block;
+  width:100%;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+    
+
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  margin-right:3px;
+  text-align:center;
+}
+   
+.embed {
+    background:none;
+    float: left;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 25px;
+    padding-bottom: 50px;
+        
+    }
+
+.textbox {
+    width: 100%;
+    background: none;
+    color: black;
+    float: left;
+    padding-left:14%;
+    padding-right: 14%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    
+    }
+    
+.textbox2 {
+    width: 100%;
+    background: none;
+    color: black;
+    float: left;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    
+    }
+    
+.author {
+    float: left;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom: 25px;
+    
+    }
+    
+    .gifcontainer {
+    float: left;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    /*padding-left: 10%;
+    padding-right: 10%*/
+    padding-top: 50px;
+    background: white;
+    height: 90%;
+    }
+
+    .quotecontainer {
+    float: left;
+    width: 100%;
+    width: 100%;
+    background: none;
+    color: black;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 5%;
+    padding-left: 5%;
+        
+    }
+    
+    
+
+    #floated{
+    float: left;
+    height: 70%;
+    margin-right: 10px;
+    }
+    
+    .responsive {
+    max-width: 100%;
+    height: auto;
+    }
+    
+    
+    
+    #jimmy {
+        width: 100%;
+        height: auto;
+    }
+    #container2 {
+        float: left;
+        max-width: 100%;
+        height: auto;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    
+    
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+
+
+</style>
+</head>
+
+    
+<body style="font-family:sans-serif; font:color:black;">
+    
+<div style="background-color: transparent;
+            padding:15px;text-align:left;">
+  
+    <div id="font1">
+        <b>Things I Have Written</b>
+    </div>
+
+</div>
+    
+<div style="overflow:auto">
+    
+<div class="menu">
+     <a href="https://thingsihaveseen.github.io/connect"><b>Connect</b></a>
+     <a href="https://thingsihaveseen.github.io/archive.html"><b>More Posts</b></a>      
+</div>
+    
+<div class="title">    
+    <b>#ForceTheVote is an Idea in Conflict With Itself. We Should Still be Talking About it.</b> 
+</div>
+    
+<div class="author">   
+    <i>1.1.20201 -Michael Stepniak</i> 
+</div>
+    
+<!--Big Text Box Experiment Here -->
+    
+<div class="textbox">
+    
+<!-- Picture, float left-->
+	
+
+    
+<div id="container2">
+    <a href="https://imgur.com/r3G2op4"><img src="https://i.imgur.com/r3G2op4.png" title="source: imgur.com" class="responsive"/></a>   
+</div>
+    
+<!-- Introduction Section -->
+    
+This started as several (!) pieces that were entirely different from the one I am writing. I veered from personal narrative to personal grievance, in an overly-detailed account of Jimmy Dore's #ForceTheVote idea, and the internet drama from the online left that followed. For people who are unaware, Dore proposed that the Squad threaten to withhold their votes for Nancy Pelosi's continued role as Speaker of the House, unless she would agree to allow a floor vote on Medicare for All.
+<p>
+As I write this on New Year's Day, it appears that nothing will come of Dore's idea, or its offshoot proposals – at least not for now. There will be postmortems within the online left, and there are a lot of hurt feelings. Ugly attacks based in bigotry and personal projection were made by both sides.
+<p>
+Putting aside those who acted like abusive #Khive stans for Dore, or AOC and the Squad, we should be talking about the ideas that were argued, the morality of the issue and the strategies, and the perspectives that were brought. 
+<p>
+I want to start with the final paragraph of 
+    
+<a href="https://www.currentaffairs.org/2020/12/the-case-for-forcing-a-floor-vote-on-medicare-for-all"><b>Briahna Joy Gray's essay</b></a> 
+    
+"The Case for Forcing the Vote for Medicare for All." Before going further, I want to be clear that if I disagree with Gray, it is on substance. I respect her and her work. Gray writes:
+
+    
+
+    
+<!-- First Block Quote Section -->
+    
+    <div class="quotecontainer">
+	At the end of the day, the moral case for action requires no strategic justification. As Kyle 
+	Kulinski, co-founder of Justice Democrats - the progressive PAC that backed AOC's historic
+	2018 run – tweeted: "If your politics come from a place of principle then all the strategy talk is
+	pretty silly anyway. If you believe in something you fight for it & dot every i & cross every t. If
+	you lose ok but the act of doing everything in your power to achieve it is the definition of
+	morality.
+    <p>
+    </div>
+    
+<!-- End First Block Quote -->
+    
+<p>
+Gray and Kulinsky aren't arguing that the left shouldn't engage strategically: #ForceTheVote is a strategy, after all. I think they are arguing that when there is a clear fight, with an enemy of progress such as Nancy Pelosi, on a clear moral issue like health care, that to fight the enemy at every opportunity <b> <i> is the strategy. </i> </b>
+<p>
+Gray offers possible benefits of #ForceTheVote, but these are largely suppositions: that the media will cover the debate, that the coverage will be beneficial, that the American people will give a shit about the coverage. These are assumptions. The main strength of Gray's essay is not in it's theoretical foundation but in its morality. The fight for Medicare for All is truly a moral fight. It is socialism or barbarism.
+<p>
+There is a familiar substance to this conflict: proceduralists with a strong belief in electoral politics versus those who favor direct action. Many on the left, including myself, have made a certain peace with this problem by supporting the fight against neoliberal capitalism on both fronts. The sticky thing here is that #ForceTheVote tries to be a direct action within a parliamentary maneuver.
+<p>
+Jamie Peck, of the Antifada and Majority Report podcasts, 
+	
+<a href="https://twitter.com/jamie_elizabeth/status/1338585177367465985"><b>tweets that</b></a>     
+    
+"m4a will not be won via parliamentary procedure. It will be won by direct action in the workplaces and in the streets." Peck is right on, but for frustrated advocates of Medicare for All, AOC's defense against accusations of being co-opted by Pelosi and the Democrat establishment seem pretty swampy. In response to criticism by Matt Stoller of the American Economic Liberties Project, who initially supported Dore for taking the Squad to task, 
+    
+<a href="https://twitter.com/AOC/status/1337955687666749441"><b>AOC tweets</b></a>
+    
+:
+<p>
+
+<!-- Second Block Quote Section -->
+    
+    <div class="quotecontainer">
+	“They aren’t demanding anything” is an assumption - and a false one. These structural 	negotiations happen, they just aren’t live-tweeted. These negotiations started months ago, & include House rules, PAYGO exemptions, committee makeup, vote commitments, investigations, etc.
+    <p>
+    </div>   
+    
+<!-- End Second Block Quote -->
+    
+So, the Squad was leveraging their votes for Pelosi, but they demanded procedural concessions in the House, not a floor vote on Medicare for All. Stoller discussed AOC's response on the Katie Halper Show with Jimmy Dore and Briahna Joy Gray, and Dore exploded into 
+    
+<a href="https://www.youtube.com/watch?v=FUV6pubLU78"><b>his allegedly funny insult comic routine</b></a>
+    
+: "Go fuck yourself with your fuckin' committee fuckface! Fuckin' egghead nerd! I don't give a fuck about your committee shit! Nobody voted for her for a fuckin' committee!" And on and on.
+<p>
+    
+<!-- Begin First Subheading -->
+    
+    <div class="subheading">
+        #ForceTheVote is not Direct Action. It is another Parliamentary Maneuver.
+    </div>
+    
+<!--End first Subheading -->
+    
+The basic problem with Dore's critique isn't the abusive way he delivers it. Most of us who want Medicare for All can put aside hurt feelings. We are fighting for our lives and the lives of people in our communities. The issue is Dore's assertion that "Nobody voted for [AOC and the Squad] for a fuckin' committee!" when of course that is exactly what we voted them into the House of fucking Representatives for.
+<p>    
+On 
+    
+<a href="https://theintercept.com/2020/12/16/aoc-nancy-pelosi-needs-to-go-but-theres-nobody-to-replace-her-yet/"><b>the Intercepted podcast</b></a> 
+    
+, Jeremy Scahil outlines the many hypocrisies of Pelosi, Chuck Schumer, and powerful Democrats: their meaningless political theater, the hysterics over the existential threat of Donald Trump and the Republican Party, as they support their most evil trillion-dollar schemes but "can't get twelve hundred bucks to suffering Americans." Scahil asks AOC: "Are you ready to say Pelosi and Schumer need to go?" AOC replies with a "yes, but," and points to the dangers of creating a power vacuum without a plan, and the opportunities it would give the right wing.
+<p>
+For angry people, this seems like one more excuse in a long line from politicians who will always find a reason to do nothing. But AOC doesn't seem to be "doing nothing." She seems intent on dismantling the interlocking mechanisms of power in the House of Representatives that keep people like Pelosi in power, and prevent bills like Medicare for All from being debated. She explains:
+    
+<!-- Third Block Quote Section -->
+    
+    <div class="quotecontainer">
+	And so what I'm looking at right now is what steps do we take? Both in structural changes 
+	because a lot of this is not just about these two personalities, but... also about the structural
+	shifts that these two personalities have led in their time in leadership. The structural shifts in
+	power in the House, both in process and rule to concentrate power in party leadership... in both
+	parties quite frankly, but in Democratic Party leadership, to such a degree that an individual
+	member has far less power than they did 30, 40, 50 years ago.
+    <p>
+	And so the answer is yes, the answer is we need to shift power, we need to make sure we have a 
+	transition of power in the leadership of the Democratic Party.
+    </div>
+       
+<!--End Third Block Quote -->
+    
+This isn't the answer Dore wants, but AOC has made a point to understand and describe how power works in the House, and appears to be working to decentralize that power. Members of congress are elected to govern, not organize the shop floors and lead civil demonstrations. AOC and the Squad have publicly bucked the Democrat establishment many times, but they are legislators. To some extent, in their hearts, they believe in the process. That is how they approach their jobs. As 
+    
+<a href="https://twitter.com/jamie_elizabeth/status/1338569424845099012"><b>Jamie Peck puts it</b></a>
+    
+, "AOC and the squad's theory of change might be flawed, but at least they have one that they are attempting to carry out, which will always earn more respect from me than mindless, idealist contrarianism."
+<p>
+    
+<!-- Begin Second Subheading -->
+    
+<div class="subheading">
+To Conclude: Activist Morality is only a thing sometimes, in the House of Representatives.
+</div>
+    
+<!-- End Second Subheading -->
+    
+I am sympathetic to #ForceTheVote. We need Medicare for All, and Nancy Pelosi isn't fit to lead. Throughout the Trump years, and now nearly a year into the global Covid-19 pandemic, she has demonstrated an almost 
+	
+<a href="https://jacobinmag.com/2019/05/rahm-emanuel-atlantic-contributing-editor-abc-austerity-chicago"><b>Rahm Emmanuel-esque</b></a> 
+	
+ability to screw over working Americans while enriching her powerful cronies, as Very Serious People nod with all of the honed political intelligence of an absolute idiot who understands nothing and proclaim that she is playing "3-D Chess" or some such nonsense.
+<p>
+For the Squad, it's not just about Pelosi. It's about the structures that allow political creatures to attain massive, concentrated power. Right now, the system is set up so that one person in the House can prevent a popular, life-saving bill like Medicare for All from being debated, through procedure and rules. The Squad's goal of dismantling that system is a theory of change. As Peck says: it's flawed. But the moral clarity of #ForceTheVote doesn't have the same foundation.
+<p>
+Morality isn't baked into the swamp of the U.S. Representatives. No effective case has been made that it would be helpful if the Squad were to behave as if it were. As someone who has been randomly kicked off of Obamacare twice and whose health coverage has ranged from spotty to non-existent for my entire adult life, there is only one morality on this issue and that is this: what will get us Medicare for All the fastest? I think Peck is right, that we will be deciding this on the shop floor and in the streets. I'm skeptical of the Squad's approach, but at least they have a plan. 
+<p>
+The #ForceTheVote proposal had its merits. It provoked a good deal of discussion and strategic thought. By its nature as a parliamentary initiative that came to be viewed as a direct action it was going to spark conflict, and conflict is often a good thing. But the notion that this one strategy proposal could be a purity test, that either you support Jimmy Dore's idea or you are a neoliberal capitalist shill is flat out destructive to the left. I'll once again leave it with 
+    
+<a href="https://www.youtube.com/watch?v=tDvDpmwYu8M"><b>Michael Brooks reminding us</b></a> 
+    
+to "be ruthless with systems, be kind to people." 
+
+
+    
+
+
+</div> <!-- textbox -->   
+</div> <!-- overflow:auto -->
+<script>
+</script>
+</body>
+</html>
